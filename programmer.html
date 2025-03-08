@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programmer Portfolio</title>
+  <link rel="stylesheet" href="p-style.css">
+  <script defer src="p-script.js"></script>
+</head>
+<body>
+  <!-- Inventory Icon -->
+  <div class="inventory-icon-container">
+    <img src="inventory-icon.png" alt="Inventory" class="inventory-icon">
+    <span class="inventory-label">Inventory</span>
+  </div>
+
+  <!-- Back Button -->
+  <button class="back-button" onclick="goBack()">← Back</button>
+
+  <div class="container">
+    <!-- Header with Title & Star -->
+    <div class="header">
+      <h1 class="title">PORTFOLIO</h1>
+      <img src="star.svg" alt="Star" class="star">
+    </div>
+
+    <div class="projects">
+      <!-- Project 1: Ecobite -->
+      <div class="project"
+           data-title="Ecobite"
+           data-keywords="AI-driven, food waste reduction, recipe recommendations, expiration alerts, donation locator, sustainability, restaurants"
+           data-description="Ecobite is an AI-powered web application created to fight food waste by offering users personalized storage tips, recipe suggestions based on leftover ingredients, and timely expiration alerts. In addition to helping households minimize waste, the platform empowers restaurants to donate surplus food. By entering a location, restaurants trigger an integrated Google Maps API that identifies nearby orphanages for potential food donations. The system’s features include dynamic recipe recommendations, real-time waste reduction insights, and an automated donation locator. The development emphasizes a continuous deployment approach to keep the recipe database current and refine AI suggestions based on seasonal ingredients and user feedback. The architecture is layered into a responsive user interaction front-end, a back-end processing layer using AI models for recipe and expiry predictions, and a robust database layer for storing recipes and user data. The project also implements a CI/CD pipeline with continuous integration, testing (using tools like Selenium and pytest), containerization (via Docker), and performance monitoring (using Prometheus and Grafana)."
+           data-tools="HTML/CSS/JavaScript, React or Vue.js, Python (TensorFlow/PyTorch), Flask or Django, PostgreSQL/MySQL, Redis, Git, Docker, GitHub Actions, Prometheus, Grafana, LogRocket, Terraform, Google Maps API">
+        <a href="https://github.com/Ashesi-Org/CS462-Food-Waste-Reduction-Platform.git" target="_blank">
+          <img src="Ecobite.jpg" alt="Ecobite">
+        </a>
+        <div class="project-info">
+          <p class="project-title">
+            <a href="https://github.com/Ashesi-Org/CS462-Food-Waste-Reduction-Platform.git" target="_blank">Ecobite</a>
+          </p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 2: Seed For Change -->
+      <div class="project"
+           data-title="Seed For Change"
+           data-keywords="volunteer matching, non-profit, centralized platform, volunteering, opportunity listing, community engagement"
+           data-description="Seed For Change is a comprehensive web platform designed to streamline the volunteering process. The system connects non-profit organizations with volunteers by enabling organizations to list detailed volunteer opportunities and allowing individuals to search for, apply to, and manage their volunteer engagements in one central hub. The project addresses common challenges in the volunteering ecosystem by automating registration and engagement tracking, which helps reduce administrative inefficiencies. With an intuitive user interface and automated backend processes, the platform facilitates meaningful community engagement and improves operational efficiency for non-profits."
+           data-tools="JavaScript, HTML, CSS, PHP, MySQL, Figma, hosting platforms">
+        <a href="https://youtu.be/NLNEfWmXWqQ?feature=shared" target="_blank">
+          <img src="https://img.youtube.com/vi/NLNEfWmXWqQ/hqdefault.jpg" alt="Seed For Change">
+        </a>
+        <div class="project-info">
+          <p class="project-title">Seed For Change</p>
+          <p class="year">2024</p>
+        </div>
+      </div>
+
+      <!-- Project 3: Business Management System & DBMS Projects -->
+      <div class="project"
+           data-title="Business Management System & DBMS Projects"
+           data-keywords="database design, EER modeling, TSQL/SQL, DBMS, banking system, data integrity, normalization, financial operations"
+           data-description="This series of projects focuses on designing robust database management systems for the Ghanaian banking sector. The work encompasses conceptual and logical database design using EER modeling and TSQL/SQL to address key challenges such as poor corporate governance, liquidity issues, and high non-performing loans. The projects involve developing comprehensive database structures that cover a wide range of banking operations—from customer management (with subtypes like regular, corporate, and premium customers) to account management (savings, checking, etc.), and transactions including loans, payments, and ATM operations. Emphasis is placed on data integrity, security, performance, and regulatory compliance. The design process follows industry best practices in data normalization and employs a mix of continuous integration and deployment techniques, automated testing, and real-time monitoring."
+           data-tools="Streamlit, MySQL, MySQL Workbench, TSQL/SQL, Git, GitHub, Docker, Selenium, pytest, Prometheus, Grafana">
+        <video src="dbms.mp4" poster="dbms_thumbnail.jpg" onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" muted></video>
+        <div class="project-info">
+          <p class="project-title">Business Management System & DBMS Projects</p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 4: Moneta -->
+      <div class="project"
+           data-title="Moneta"
+           data-keywords="expense tracking, budget management, receipt capture, financial app, mobile application, university students"
+           data-description="Moneta is a mobile expense tracking application tailored for university students. Its primary goal is to empower users to monitor their expenses, manage budgets, and maintain financial discipline. The app enables users to capture receipts via camera integration or gallery access, automatically generate PDF expense reports in the background, and receive push notifications to remind them of budget reviews and expense logging. The system architecture is divided into presentation, business logic, data access, and integration layers, ensuring a modular and scalable design. Prototyping was done using Figma, and the back-end is developed in PHP with a MySQL database supporting robust data management."
+           data-tools="Dart, PHP, MySQL, Flutter, Figma, Hostinger, PHP PDO, custom web API, flutter_local_notifications, image_picker, flutter_search_bar, fl_chart, flutter_native_splash">
+        <a href="https://youtu.be/ZlcveID5-r8" target="_blank">
+          <img src="https://img.youtube.com/vi/ZlcveID5-r8/hqdefault.jpg" alt="Moneta">
+        </a>
+        <div class="project-info">
+          <p class="project-title">Moneta</p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 5: Meliora Initiative -->
+      <div class="project"
+           data-title="Meliora Initiative"
+           data-keywords="NGO, humanitarian, website, food sharing, beach cleanups, community service"
+           data-description="Meliora Initiative involved developing a website for a non-governmental organization dedicated to humanitarian services. The website showcases initiatives such as food sharing, beach cleanups, and other community engagement activities. It is designed with a user-friendly interface that clearly communicates the organization’s mission and upcoming events, facilitating volunteer participation and donor engagement."
+           data-tools="HTML, CSS, JavaScript">
+        <a href="http://www.meliorainitiative.com" target="_blank">
+          <img src="Slide1.jpg" alt="Meliora Initiative">
+        </a>
+        <div class="project-info">
+          <p class="project-title">Meliora Initiative</p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 6: Argos Defense -->
+      <div class="project"
+           data-title="Argos Defense"
+           data-keywords="fraud detection, AI, real-time monitoring, banking security, machine learning, XGBoost"
+           data-description="Argos Defense is an AI-driven system for real-time fraud detection in bank transactions. Designed to address modern fraud challenges, the system uses machine learning—primarily XGBoost—to analyze transactions as they occur and assign a fraud score based on risk factors. By integrating real-time data processing with a web-based dashboard, the platform allows bank administrators to monitor transactions, flag suspicious activities, and take prompt corrective actions. Developed using an incremental, agile methodology, the project emphasizes continuous integration, testing, and rapid deployment to adapt to evolving fraud tactics and regulatory requirements."
+           data-tools="Python, XGBoost, SMOTE, ADASYN, Flask, Git, Docker, Postman, CI/CD tools">
+        <a href="https://github.com/Kwasiyy/ArgosDefense.git" target="_blank">
+          <video src="argos.mov" poster="argos_thumbnail.jpg" onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" muted></video>
+        </a>
+        <div class="project-info">
+          <p class="project-title">
+            <a href="https://github.com/Kwasiyy/ArgosDefense.git" target="_blank">Argos Defense</a>
+          </p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 7: Reverie -->
+      <div class="project"
+           data-title="Reverie"
+           data-keywords="thrift store, multi-vendor marketplace, mobile app, hybrid application, cross-platform, shopping experience"
+           data-description="Reverie is a hybrid mobile application that redefines the thrift shopping experience by unifying multiple vendor platforms into a single, user-friendly marketplace. The app streamlines the process for vendors by integrating essential functionalities such as camera integration for product listings, background task management for order processing, push notifications for timely updates, advanced search and filtering features, and a custom splash screen to enhance branding. It supports both iOS and Android devices using a single codebase, making it an efficient solution for modern multi-vendor retail environments."
+           data-tools="Flutter, Dart, PHP, SQL, Figma, Hostinger, custom APIs, flutter_local_notifications, image_picker, fl_chart, flutter_native_splash">
+        <a href="https://github.com/Malottey1/Reverie.git" target="_blank">
+          <video src="REVERIE.mp4" poster="reverie_thumbnail.jpg" onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" muted></video>
+        </a>
+        <div class="project-info">
+          <p class="project-title">
+            <a href="https://github.com/Malottey1/Reverie.git" target="_blank">Reverie</a>
+          </p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 8: Cryptonomics -->
+      <div class="project"
+           data-title="Cryptonomics"
+           data-keywords="cryptocurrency forecasting, LSTM, price prediction, Bitcoin, Ethereum, Litecoin, Yahoo Finance"
+           data-description="Cryptonomics is a predictive analytics platform that leverages advanced LSTM models to forecast the prices of major cryptocurrencies, including Bitcoin, Ethereum, and Litecoin. By harnessing historical price data sourced from Yahoo Finance, the system provides investors with data-driven insights into market trends and potential future movements. The platform supports informed decision-making in a volatile market by offering reliable predictions and trend analysis through a user-friendly web interface. Deployed with Flask, it combines machine learning and real-time data processing to deliver actionable forecasts."
+           data-tools="Python, LSTM frameworks (e.g., TensorFlow or PyTorch), Flask, Yahoo Finance API">
+        <a href="https://youtu.be/5ZVOhmhM3nw" target="_blank">
+          <img src="https://img.youtube.com/vi/5ZVOhmhM3nw/hqdefault.jpg" alt="Cryptonomics">
+        </a>
+        <div class="project-info">
+          <p class="project-title">Cryptonomics</p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 9: Spring Forth School -->
+      <div class="project"
+           data-title="Spring Forth School"
+           data-keywords="school website, educational institution, responsive design, information portal"
+           data-description="Spring Forth School is a website developed for an educational institution to provide comprehensive information about its programs, events, and contact details. The site is built with a responsive design to ensure accessibility on desktops, tablets, and mobile devices. It offers clear navigation, a modern layout, and engaging visuals that effectively communicate the school’s identity and values."
+           data-tools="HTML, CSS, JavaScript">
+        <a href="http://www.springforthschool.com" target="_blank">
+          <img src="Slide2.png" alt="Spring Forth School">
+        </a>
+        <div class="project-info">
+          <p class="project-title">
+            <a href="http://www.springforthschool.com" target="_blank">Spring Forth School</a>
+          </p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 10: MaloTravel -->
+      <div class="project"
+           data-title="MaloTravel"
+           data-keywords="travel app, mobile application, Flutter, UI design, navigation, itinerary management"
+           data-description="MaloTravel is a mobile application developed as a lab project to help users explore travel destinations and manage itineraries. Built using Flutter, the app demonstrates skills in asset management, layout design, data transfer between pages, and page navigation. Users can view a list of travel destinations, tap on one for detailed information, and navigate seamlessly between screens."
+           data-tools="Flutter">
+        <a href="https://github.com/Malottey1/malotravel.git" target="_blank">
+          <video src="Malotravel.mp4" poster="malotravel_thumbnail.jpg" onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;" muted></video>
+        </a>
+        <div class="project-info">
+          <p class="project-title">
+            <a href="https://github.com/Malottey1/malotravel.git" target="_blank">MaloTravel</a>
+          </p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+
+      <!-- Project 11: Roommate Finder -->
+      <div class="project"
+           data-title="Roommate Finder"
+           data-keywords="roommate matching, algorithm, web application, user profiles, filtering, communication"
+           data-description="Roommate Finder, also known as The Roommate Radar, is a web application designed to connect users with compatible roommates. The project centers on a sophisticated matching algorithm that analyzes user interests, preferences, hostel affiliations, and gender to generate optimal roommate matches. Key features include secure user authentication, dynamic display of user profiles, filtering options to narrow down matches, and integrated communication tools that allow users to contact potential roommates via their preferred channels."
+           data-tools="HTML, CSS, JavaScript, PHP, MySQL, Git">
+        <a href="https://youtu.be/3WJ094sWszo?feature=shared" target="_blank">
+          <img src="https://img.youtube.com/vi/3WJ094sWszo/hqdefault.jpg" alt="Roommate Finder">
+        </a>
+        <div class="project-info">
+          <p class="project-title">Roommate Finder</p>
+          <p class="year">2023</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <button class="close-btn">&times;</button>
+    <h2 id="sidebar-title">Title: </h2>
+    <p id="sidebar-keywords">Keywords: </p>
+    <p id="sidebar-description">Description: </p>
+    <p id="sidebar-tools">Tools Used: </p>
+  </div>
+</body>
+</html>

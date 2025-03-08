@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(to bottom right, #763A5D, #2E3A64);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.inventory-container {
+    background: #8B5A2B;
+    padding: 15px;
+    border: 4px solid #4A2E19;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+.inventory-header {
+    background: #A0673B;
+    color: #FFD700;
+    font-size: 18px;
+    padding: 5px;
+    border: 3px solid #4A2E19;
+    margin-bottom: 8px;
+}
+
+.inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4px;
+    background: #8B5A2B;
+    padding: 5px;
+    border: 3px solid #4A2E19;
+}
+
+.inventory-item {
+    width: 50px;
+    height: 50px;
+    background: #5A3825;
+    border: 2px solid #4A2E19;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inventory-item img {
+    width: 40px;
+    height: 40px;
+    image-rendering: pixelated;
+}
+
+.item-count {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: white;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 50%;
+}
+
+.inventory-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.sort-button {
+    background: #FFD700;
+    border: 2px solid #4A2E19;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}

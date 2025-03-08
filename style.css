@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: url('ARCADECLASSIC.TTF') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.png') no-repeat center center/cover;
+    font-family: 'ArcadeClassic', sans-serif;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    width: 80%;
+    max-width: 550px;
+    margin-bottom: 15px; /* Moves the title up */
+}
+
+.description {
+    font-size: 18px;
+    color: white;
+    max-width: 700px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    font-family: 'ArcadeClassic', sans-serif;
+}
+
+.enter-button {
+    width: 200px;
+    height: 60px;
+    background: url('game-button.svg') no-repeat center center;
+    background-size: contain;
+    border: none;
+    font-family: 'ArcadeClassic', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Transition Effect */
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
