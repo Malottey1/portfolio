@@ -19,7 +19,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # Use npm ci for more reliable builds
 
       - name: Build project
         run: npm run build
@@ -28,17 +28,17 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build
-          path: build  # Path to your built files
+          path: build  # Ensure this path is correct
 
       - name: Deploy to GitHub Pages
         uses: actions/configure-pages@v5
         with:
-          enablement: true  # Use this if Pages is not already enabled
+          enablement: true  # Remove if Pages is already enabled
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: 'build'  # Path to your built files
+          path: 'build'  # Ensure this path is correct
 
       - name: Deploy
         id: deployment
