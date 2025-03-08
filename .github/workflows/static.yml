@@ -24,12 +24,18 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: build  # Path to your built files
+
       - name: Deploy to GitHub Pages
         uses: actions/configure-pages@v5
         with:
           enablement: true  # Use this if Pages is not already enabled
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: 'build'  # Path to your built files
